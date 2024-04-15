@@ -11,6 +11,17 @@ header {
     text-align: center;
 }
 
+.description-content {
+    display: flex;
+    align-items: center;
+}
+
+.description-image {
+    width: 100px;
+    margin-right: 20px;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
