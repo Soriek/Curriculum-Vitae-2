@@ -41,6 +41,11 @@ footer {
     background-color: #1E3F20;
     padding: 10px;
     text-align: center;
+    color: #fff; /* Color blanco para el texto del footer */
+}
+
+footer a {
+    color: #ccc; /* Esto cambiaría el color de los enlaces dentro del footer */
 }
 
 img {
