@@ -223,3 +223,16 @@ footer a {
         display: block !important;
     }
 }
+
+header {
+    background-color: #1E3F20;
+    padding: 10px 0; /* Aumentar el padding vertical para agrandar el header */
+    margin: 0;
+    overflow: hidden;
+}
+
+@media (min-width: 576px) {
+    header {
+        padding: 20px 0; /* Volver al padding original en dispositivos más grandes */
+    }
+}
