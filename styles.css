@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1A1F16;
+    background-color: #386641;
     color: #fff;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #1E3F20 !important; /* Color verde */
+    background-color: #6A994E !important; /* Color verde */
     border: none !important; /* Eliminar cualquier borde */
     box-shadow: none !important; /* Eliminar sombra */
     margin: 0; /* Eliminar cualquier margen */
@@ -73,7 +73,7 @@ body {
 /* Navbar responsive */
 @media (max-width: 767.98px) {
     .navbar-nav {
-        background-color: #1E3F20; /* Color de fondo para el menú desplegable */
+        background-color: #6A994E; /* Color de fondo para el menú desplegable */
         position: fixed; /* Fijar el menú en la parte superior */
         top: 56px; /* Ajustar la distancia desde la parte superior */
         width: 100%; /* Ocupar todo el ancho */
@@ -127,13 +127,13 @@ body {
 section {
     width: 100%;
     max-width: 600px;
-    background-color: #345830;
+    background-color: #A7C957;
     margin-bottom: 20px;
     padding: 20px;
 }
 
 footer {
-    background-color: #1E3F20;
+    background-color: #6A994E; /* Color del footer igual al color del header */
     padding: 10px;
     text-align: center;
     color: #fff;
@@ -166,7 +166,7 @@ footer a {
     }
 
     .navbar-collapse {
-        background-color: #1E3F20;
+        background-color: #A1BA89;
         position: fixed;
         top: 56px;
         width: 100%;
@@ -200,7 +200,7 @@ footer a {
         z-index: 1000;
         display: none;
         float: none !important;
-        background-color: #fff; /* Cambia el color de fondo del menú desplegable si es necesario */
+        background-color: #A1BA89;
     }
 
     .navbar-collapse.show {
@@ -224,14 +224,14 @@ footer a {
 }
 
 header {
-    background-color: #1E3F20;
-    padding: 10px 0; /* Aumentar el padding vertical para agrandar el header */
+    background-color: #6A994E;
+    padding: 10px 0;
     margin: 0;
     overflow: hidden;
 }
 
 @media (min-width: 576px) {
     header {
-        padding: 20px 0; /* Volver al padding original en dispositivos más grandes */
+        padding: 20px 0;
     }
 }
