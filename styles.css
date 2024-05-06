@@ -9,107 +9,107 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #6A994E !important; /* Color verde */
-    border: none !important; /* Eliminar cualquier borde */
-    box-shadow: none !important; /* Eliminar sombra */
-    margin: 0; /* Eliminar cualquier margen */
-    padding: 0; /* Eliminar cualquier padding */
-    width: 100%; /* Ajuste para que ocupe todo el ancho */
-    display: flex; /* Mostrar como flex para centrar los elementos */
-    justify-content: center; /* Centrar horizontalmente los elementos */
-    position: sticky; /* Fijar la barra de navegación */
-    top: 0; /* Posición arriba */
-    z-index: 1000; /* Ajustar el índice z para estar sobre otros elementos */
+    background-color: #6A994E !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-link {
-    color: #fff !important; /* Color de texto blanco */
+    color: #fff !important;
 }
 
 .navbar-toggler {
-    color: #fff; /* Color del icono del toggler */
-    border-color: #fff; /* Color del borde del toggler */
-    background-color: transparent !important; /* Fondo transparente */
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent !important;
 }
 
 /* Custom Navbar Styles */
 .navbar-toggler-icon {
-    background-color: transparent !important; /* Fondo transparente */
-    border: none !important; /* Eliminar cualquier borde */
-    box-shadow: none !important; /* Eliminar sombra */
-    width: 32px; /* Ajustar el ancho del icono */
-    height: 2px; /* Ajustar la altura de cada línea */
-    position: relative; /* Posicionamiento relativo */
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 32px;
+    height: 2px;
+    position: relative;
 }
 
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
-    content: ''; /* Contenido vacío para los pseudo-elementos */
-    background-color: #fff; /* Color blanco para las líneas */
-    width: 100%; /* Ancho del pseudo-elemento */
-    height: 100%; /* Altura del pseudo-elemento */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 0; /* Posicionamiento vertical */
-    left: 0; /* Posicionamiento horizontal */
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .navbar-toggler-icon::before {
-    top: -6px; /* Ajuste para la posición vertical de la primera línea */
+    top: -6px;
 }
 
 .navbar-toggler-icon::after {
-    bottom: -6px; /* Ajuste para la posición vertical de la segunda línea */
+    bottom: -6px;
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon::before {
-    transform: translateY(6px) rotate(45deg); /* Transformación para la primera línea */
+    transform: translateY(6px) rotate(45deg);
 }
 
 .navbar-toggler.collapsed .navbar-toggler-icon::after {
-    transform: translateY(-6px) rotate(-45deg); /* Transformación para la segunda línea */
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Navbar responsive */
 @media (max-width: 767.98px) {
     .navbar-nav {
-        background-color: #6A994E; /* Color de fondo para el menú desplegable */
-        position: fixed; /* Fijar el menú en la parte superior */
-        top: 56px; /* Ajustar la distancia desde la parte superior */
-        width: 100%; /* Ocupar todo el ancho */
-        overflow-y: auto; /* Agregar scroll vertical si es necesario */
-        max-height: calc(100vh - 56px); /* Limitar la altura del menú al alto de la ventana */
-        display: none; /* Ocultar el menú por defecto */
+        background-color: #6A994E;
+        position: fixed;
+        top: 56px;
+        width: 100%;
+        overflow-y: auto;
+        max-height: calc(100vh - 56px);
+        display: none;
     }
 
     .navbar-toggler {
-        display: block !important; /* Mostrar el botón de hamburguesa */
-        position: absolute; /* Posición absoluta para superponer sobre el header */
-        top: 15px; /* Ajuste vertical */
-        right: 15px; /* Ajuste horizontal */
-        z-index: 1001; /* Ajustar el índice z para estar sobre el navbar */
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 1001;
     }
 
     .navbar-collapse.show {
-        display: block !important; /* Mostrar el menú desplegable cuando está abierto */
+        display: block !important;
     }
 
     .navbar-toggler:focus {
-        outline: none; /* Eliminar el contorno al hacer focus en el botón */
+        outline: none;
     }
 
     .show {
-        display: block !important; /* Mostrar el menú desplegable cuando está abierto */
+        display: block !important;
     }
 
     .navbar-nav .nav-item {
-        text-align: center; /* Centrar los elementos del menú */
+        text-align: center;
     }
 
     .navbar-nav .nav-item a {
-        display: block; /* Mostrar los enlaces en bloque */
-        padding: 0.5rem 1rem; /* Agregar espacio interno alrededor del texto */
-        color: #fff !important; /* Color del texto blanco */
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #fff !important;
     }
 }
 
@@ -133,7 +133,7 @@ section {
 }
 
 footer {
-    background-color: #6A994E; /* Color del footer igual al color del header */
+    background-color: #6A994E;
     padding: 10px;
     text-align: center;
     color: #fff;
@@ -236,3 +236,34 @@ header {
     }
 }
 
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para el carrusel de fondo */
+.carousel-bg {
+    position: fixed;
+    top: 56px; /* Ajuste para que comience después del header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.carousel-bg .carousel-inner,
+.carousel-bg .carousel-item {
+    height: 100vh; /* Ajuste para que el carrusel ocupe toda la altura */
+}
+
+.carousel-bg .carousel-item img {
+    object-fit: cover; /* Ajuste para que las imágenes mantengan su relación de aspecto */
+    width: 100%;
+    height: 100%;
+}
